@@ -1,0 +1,31 @@
+extends ruby
+
+snippet param "param" wb
+param :${1:attribute}${2:, ${3:presence}: ${4:true}}${5: do
+  $6
+end}
+endsnippet
+
+snippet get "GET route" wb
+get '/${1:products}', to: '$1#${2:index}'
+endsnippet
+
+snippet post "POST route" wb
+post '/${1:products}', to: '$1#${2:create}'
+endsnippet
+
+snippet put "PUT route" wb
+put '/${1:products}', to: '$1#${2:update}'
+endsnippet
+
+snippet delete "DELETE route" wb
+delete '/${1:products}', to: '$1#${2:destroy}'
+endsnippet
+
+snippet coll "Collection mapping" wb
+collection :${1:products} do
+	entity ${2:Product}
+	repository $2Repository
+	$0
+end
+endsnippet
