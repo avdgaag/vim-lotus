@@ -35,6 +35,9 @@ To get the latest updates or report bugs, see this plugin's Github repository: h
 Author: Arjan van der Gaag
 URL: http://arjanvandergaag.nl
 
+This plugin is based on earlier work by Tim Pope, who has released many
+incredible Vim plugins.
+
 ## License
 
 See LICENSE.
