@@ -31,9 +31,15 @@ let s:projections = {
   \   'type': '{app}Action',
   \   'alternate': 'spec/{app}/controllers/{}_spec.rb'
   \ },
+  \ 'spec/{app}/controllers/*_spec.rb': {
+  \   'alternate': 'apps/{app}/controllers/{}.rb'
+  \ },
   \ 'apps/{app}/views/*.rb': {
   \   'type': '{app}View',
   \   'alternate': 'spec/{app}/views/{}_spec.rb'
+  \ },
+  \ 'spec/{app}/views/*_spec.rb': {
+  \   'alternate': 'apps/{app}/views/{}.rb'
   \ },
   \ 'apps/{app}/templates/*': {
   \   'type': '{app}Template'
@@ -48,6 +54,9 @@ let s:projections = {
   \   'type': '{app}Presenter',
   \   'alternate': 'spec/{app}/presenters/{}_spec.rb'
   \ },
+  \ 'spec/{app}/presenters/*_spec.rb': {
+  \   'alternate': 'apps/{app}/presenters/{}.rb'
+  \ },
   \ 'spec/{app}/*.rb': {
   \   'type': '{app}Spec'
   \ },
@@ -58,13 +67,22 @@ let s:projections = {
   \   'type': 'entity',
   \   'alternate': 'spec/{project}/entities/{}_spec.rb'
   \ },
+  \ 'spec/{project}/entities/*_spec.rb': {
+  \   'alternate': 'lib/{project}/entities/{}.rb'
+  \ },
   \ 'lib/{project}/repositories/*.rb': {
   \   'type': 'repository',
   \   'alternate': 'spec/{project}/repositories/{}_spec.rb'
   \ },
+  \ 'spec/{project}/repositories/*_spec.rb': {
+  \   'alternate': 'lib/{project}/repositories/{}.rb'
+  \ },
   \ 'lib/*.rb': {
   \   'type': 'lib',
   \   'alternate': 'spec/{project}/{}_spec.rb'
+  \ },
+  \ 'spec/{project}/*.rb': {
+  \   'alternate': 'lib/{project}/{}.rb'
   \ },
   \ 'lib/{project}.rb': {
   \   'type': 'lib'
