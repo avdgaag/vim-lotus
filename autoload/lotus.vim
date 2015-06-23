@@ -142,7 +142,7 @@ function! lotus#ProjectionistDetect(projections) abort
 endfunction
 
 function! lotus#SetupSnippets() abort
-  let snippetsDir = expand('<sfile>', ':h') . '/snippets'
+  let snippetsDir = expand('<sfile>', ':h') . '/ultisnips'
   if exists('g:UltiSnipsSnippetsDir')
     call add(g:UltiSnipsSnippetsDir, snippetsDir)
   else
