@@ -45,5 +45,5 @@ See LICENSE.
 [vim-projectionist]: https://github.com/tpope/vim-projectionist
 [vim-surround]:      https://github.com/tpope/vim-surround
 [UltiSnips]:         https://github.com/SirVer/UltiSnips
-[vim-pathogen]:      https://github.com/tpope/vim-pathogen
+[pathogen]:          https://github.com/tpope/vim-pathogen
 [lotus]:             https://github.com/lotus/lotus
