@@ -27,6 +27,14 @@ augroup lotus
 augroup END
 
 let s:projections = {
+  \ '*': {
+  \   'console': 'lotus console',
+  \   'start': 'lotus server',
+  \   'make': 'rake'
+  \ },
+  \ 'spec/*_spec.rb': {
+  \   'make': 'ruby -Ispec {file}'
+  \ },
   \ 'apps/{app}/controllers/*.rb': {
   \   'type': '{app}Action',
   \   'alternate': 'spec/{app}/controllers/{}_spec.rb'
